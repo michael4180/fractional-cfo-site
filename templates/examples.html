@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block title %}Examples - Fractional CFO{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold text-blue-900 mb-8">Reporting Examples</h1>
+
+<!-- FP&A Examples -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">📊 FP&A Tools & Forecasting</h2>
+  <p class="mb-4 text-gray-600">Forecasts, budget-to-actual reports, and cash flow planning templates.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% set fpa_images = [
+      "balance_sheet.png",
+      "cash_flow_statement.png",
+      "expenses.png",
+      "headcount.png",
+      "revenues.png",
+      "summary_income_stmt.png"
+    ] %}
+
+    {% for file in fpa_images %}
+    <div class="border rounded overflow-hidden shadow">
+      <img src="{{ url_for('static', filename='images/fp&a/' ~ file) }}" alt="{{ file }}" class="w-full h-auto">
+      <p class="p-2 text-sm text-gray-600 text-center">{{ file.replace('_', ' ').replace('.png', '').title() }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Dashboard Examples -->
+<section>
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">📈 Dashboards</h2>
+  <p class="mb-4 text-gray-600">Live dashboards for revenue, margin, AR/AP, and executive summary metrics.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% set dashboard_images = [
+      "Cashflow Dashboard.png",
+      "Digital Marketing Dashboard.png",
+      "Fundraising Dashboard.png",
+      "Marketing Dashboard.png",
+      "Sales Dashboard.png",
+      "Sales Dashboard (2).png",
+      "Sales Pipeline.png"
+    ] %}
+
+    {% for file in dashboard_images %}
+    <div class="border rounded overflow-hidden shadow">
+      <img src="{{ url_for('static', filename='images/dashboards/' ~ file) }}" alt="{{ file }}" class="w-full h-auto">
+      <p class="p-2 text-sm text-gray-600 text-center">{{ file.replace('_', ' ').replace('.png', '').title() }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

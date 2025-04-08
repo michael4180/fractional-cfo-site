@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}Engagement Tiers - Fractional CFO{% endblock %}
+{% block content %}
+<h1 class="text-3xl font-bold text-blue-900 mb-6">Engagement Levels</h1>
+
+<table class="min-w-full text-left text-sm bg-white border border-gray-300">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="px-4 py-2 border-b">Tier</th>
+      <th class="px-4 py-2 border-b">Description</th>
+      <th class="px-4 py-2 border-b">Ideal For</th>
+      <th class="px-4 py-2 border-b">Example Deliverables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="px-4 py-2 border-b font-bold">Essential</td>
+      <td class="px-4 py-2 border-b">Monthly reporting and dashboard setup</td>
+      <td class="px-4 py-2 border-b">&lt; $2M in annual revenue</td>
+      <td class="px-4 py-2 border-b">P&L statements, visual dashboard</td>
+    </tr>
+    <tr>
+      <td class="px-4 py-2 border-b font-bold">Growth</td>
+      <td class="px-4 py-2 border-b">Full FP&A support with integrated dashboards</td>
+      <td class="px-4 py-2 border-b">$2M–$10M companies</td>
+      <td class="px-4 py-2 border-b">Budgeting tools, forecast modeling, KPI review</td>
+    </tr>
+    <tr>
+      <td class="px-4 py-2 border-b font-bold">Scale</td>
+      <td class="px-4 py-2 border-b">CFO-level strategic insight and financial ops</td>
+      <td class="px-4 py-2 border-b">VC-backed, scaling companies</td>
+      <td class="px-4 py-2 border-b">Board reports, investor analysis, AI integration</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
+

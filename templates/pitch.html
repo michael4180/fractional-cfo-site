@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% block title %}Pitch - Fractional CFO{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="mb-12 text-center">
+  <h1 class="text-4xl font-bold text-blue-900 mb-4">Fractional CFO + AI-Driven Finance & Workflows</h1>
+  <p class="text-lg text-gray-700 max-w-3xl mx-auto">Unlock strategic finance through automation, forecasting, and decision-ready dashboards.</p>
+</section>
+
+<!-- Services Overview -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">Our Services</h2>
+  <ul class="list-disc pl-5 text-gray-700 space-y-2">
+    <li>Forecasting & Cash Flow Modeling (12-month and 13-week)</li>
+    <li>KPI and OKR Presentations</li>
+    <li>Budget vs Actual Analysis</li>
+    <li>AI-Enhanced Commentary & Alerts</li>
+    <li>Dashboards in Excel or Interactive Web Formats</li>
+    <li>Strategic Advisory & Decision Support</li>
+  </ul>
+</section>
+
+<!-- Process Flow Image -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">End-to-End Process Flow</h2>
+  <img src="{{ url_for('static', filename='images/flowchart.png') }}" alt="Process Flow" class="mx-auto w-full max-w-3xl rounded shadow">
+
+</section>
+
+<!-- Tech Stack -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">Tech & Tooling</h2>
+  <div class="overflow-auto">
+    <table class="min-w-full text-left text-sm bg-white border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-4 py-2 border-b">Area</th>
+          <th class="px-4 py-2 border-b">Tools</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-4 py-2 border-b">Data Integration</td>
+          <td class="px-4 py-2 border-b">Python, ERP/Accounting API, RESTful setups</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Transformation</td>
+          <td class="px-4 py-2 border-b">pandas, Excel logic</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Dashboards</td>
+          <td class="px-4 py-2 border-b">Excel + Power Query / Embedded formats</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">AI Insights</td>
+          <td class="px-4 py-2 border-b">Python + LLMs (commentary, alerting)</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Delivery</td>
+          <td class="px-4 py-2 border-b">Excel, PDF, Embedded reporting tools</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Deliverables -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">Deliverables</h2>
+  <ul class="list-disc pl-5 text-gray-700 space-y-2">
+    <li>12+ Month Forecast Models (dynamic and customizable)</li>
+    <li>13-Week Cash Flow Models (synced to ERP)</li>
+    <li>Budget vs Actuals with driver-based logic</li>
+    <li>KPI/OKR Reports & Presentations</li>
+    <li>AI-generated Monthly Commentary (e.g., margin change alerts)</li>
+  </ul>
+</section>
+
+<!-- Timeline -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">Implementation Timeline</h2>
+  <div class="overflow-auto">
+    <table class="min-w-full text-left text-sm bg-white border border-gray-300">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-4 py-2 border-b">Phase</th>
+          <th class="px-4 py-2 border-b">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-4 py-2 border-b">Discovery & Planning</td>
+          <td class="px-4 py-2 border-b">2 Weeks</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Data Sync & Cleaning</td>
+          <td class="px-4 py-2 border-b">2 Weeks</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Template Build</td>
+          <td class="px-4 py-2 border-b">3 Weeks</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Dashboarding & Review</td>
+          <td class="px-4 py-2 border-b">2 Weeks</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border-b">Automation & Advisory</td>
+          <td class="px-4 py-2 border-b">Ongoing</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="mb-12 text-center">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">Let’s Talk</h2>
+  <p class="mb-4 text-gray-700">Contact us for a demo or to explore a pilot engagement.</p>
+  <a href="/about">
+    <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book a Call</button>
+  </a>
+</section>
+
+{% endblock %}
