@@ -26,5 +26,9 @@ def examples():
 def about():
     return render_template('about.html')
 
+@app.route('/test')
+def test():
+    return "It works!"
+
 if __name__ == '__main__':
     app.run(debug=True)
